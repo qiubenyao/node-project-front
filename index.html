@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> 系统首页</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet/less" href="./css/reset.less">
+  <link rel="stylesheet/less" href="./css/common.less">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1110021_bv6rtxt80dt.css">
+</head>
+<body>
+
+  <header class="lv-header">
+    <div class="lv-header-left">
+      <a href="/" class="logo"><h1>骚猪 - 我的天，你真帅</h1></a>
+    </div>
+    <div class="lv-header-right">
+      <div class="btn"><i class="iconfont icon-setting"></i></div>
+      <div class="btn" id="open"><i class="iconfont icon-edit"></i></div>
+      <div class="user">
+        <img class="avator" src="./images/avator.png" alt="">
+        <span class="nickname">Admin</span>
+        <i class="iconfont icon-down"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="lv-main">
+    <div class="lv-menu">
+      <ul>
+        <li class="lv-menu-item active">
+          <a href="/">
+            <i class="iconfont icon-home"></i>
+            <span class="lv-menu-item__title">系统首页</span>
+          </a>
+        </li>
+        <li class="lv-menu-item">
+          <a href="/student.html">
+            <i class="iconfont icon-team"></i>
+            <span class="lv-menu-item__title">学生管理</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="lv-body">
+      <h1>首页</h1>
+    </div>
+  </div>
+
+  <!-- 新增学生的 模态框 -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">修改头像</h4>
+        </div>
+        <div class="modal-body">
+          
+          <!-- <form 
+            action="http://localhost:3000/api/user/upload"
+            method="POST"
+            enctype="multipart/form-data"
+            > -->
+            <label>
+              <input type="file" name="avatar" />
+            </label>
+          <!-- </form> -->
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="ok">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/less.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
